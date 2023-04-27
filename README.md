@@ -43,19 +43,14 @@
    - [Postman](https://www.postman.com/downloads/ "Postman")
       - I used postman version 7.36.1 at time of creation
 
-2. Clone this repository into your local machine using the terminal (mac) or [Gitbash (PC)](https://git-scm.com/download/win "Gitbash (PC)")
 
-   ```
-   > git clone https://github.com/iammelvink/react-complete-e-commerce.git
-   ```
 
-3. backend setup (DO NOT cd to backend) (running on port you decide)
-
+2. backend setup 
    ```
    > npm install
    ```
 
-4. frontend setup (running on port 3000)
+3. frontend setup (running on port 3000)
    ```
    > cd frontend
    ```
