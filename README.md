@@ -102,7 +102,7 @@
 1. Make sure you have created accounts at
 
    - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register "MongoDB Atlas")
-
+   - [Heroku](https://signup.heroku.com/login "Heroku")
 
 2. Then follow ALL step by step
 
@@ -121,5 +121,100 @@
    > npm run data:import
    ```
 
- 
+   Heroku:
 
+   Installing Heroku using npm globally
+
+   ```
+   > npm install -g heroku
+   ```
+
+   Logging into Heroku
+
+   ```
+   > heroku login
+   ```
+
+   Creating a heroku app
+
+   ```
+   > heroku create
+   ```
+
+   Create .gitignore file
+   Add this
+
+   ONLY in entire file
+
+   ```
+   ## Dependency directories
+   node_modules/
+   ```
+
+   OR
+
+   ```
+   Remove 'dist' and 'build' from .gitignore file
+   ```
+
+   ```
+   > git init
+   ```
+
+   ```
+   > heroku git:remote -a <app name>
+   ```
+
+   ```
+   > git add .
+   ```
+
+   ```
+   > git commit -am "initial commit"
+   ```
+
+   ```
+   > git push heroku master
+   ```
+   ```
+
+   OR
+
+   ```   
+   ```
+   > git push --set-upstream heroku master
+   ```
+   ```
+
+   OR
+
+   ```   
+   ```
+   > git push heroku
+   ```
+
+   Setting environment variables
+
+   ```
+   > heroku config:set NODE_ENV=production -a <app name>
+   ```
+
+   ```
+   > heroku config:set PORT=<> -a <app name>
+   ```
+
+   ```
+   > heroku config:set MONGO_URI='<entire_uri+password>' -a <app name>
+   ```
+
+   ```
+   > heroku config:set JWT_SECRET='<secret>' -a <app name>
+   ```
+
+   ```
+   > heroku config:set PAYPAL_CLIENT_ID='<id>' -a <app name>
+   ```
+
+   ```
+   > heroku ps:scale web=1
+   ```
